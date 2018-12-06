@@ -1,2 +1,2 @@
-# node_web_template
+# node web template
 node_web_template

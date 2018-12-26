@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        <%= title %>
+    </title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>SPLUG OPEN</title>
+    <!-- Bootstrap core CSS-->
+    <link href="/open_home_resource/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom fonts for this template-->
+    <link href="/open_home_resource/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- Page level plugin CSS-->
+    <link href="/open_home_resource/vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+    <!-- Custom styles for this template-->
+    <link href="/open_home_resource/css/sb-admin.css" rel="stylesheet">
+</head>
+
+<body class="fixed-nav sticky-footer bg-dark" id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+        <a class="navbar-brand" href="/open_home">SPLUG OPEN</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
+                <li class="nav-item" data-toggle="tooltip" data-placement="right" title="홈">
+                    <a class="nav-link" href="/open_home">
+            <i class="fa fa-fw fa-dashboard"></i>
+            <span class="nav-link-text">HOME</span>
+          </a>
+                </li>
+
+                <li class="nav-item" data-toggle="tooltip" data-placement="right" title="공지사항">
+                    <a class="nav-link" href="/open_home/noti">
+            <i class="fa fa-fw fa-wrench"></i>
+            <span class="nav-link-text">공지사항</span>
+          </a>
+                </li>
+                <li class="nav-item" data-toggle="tooltip" data-placement="right" title="게시판">
+                    <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponents" data-parent="#exampleAccordion">
+            <i class="fa fa-fw fa-table"></i>
+            <span class="nav-link-text">게시판</span>
+          </a>
+                    <ul class="sidenav-second-level collapse" id="collapseComponents">
+                        <li>
+                            <a href="/open_home/free">자유게시판</a>
+                        </li>
+                        <!--    <li>
+                            <a href="cards.html">Cards</a>
+                        </li>-->
+                    </ul>
+                </li>
+                <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Example Pages">
+                    <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseExamplePages" data-parent="#exampleAccordion">
+            <i class="fa fa-fw fa-file"></i>
+            <span class="nav-link-text">Example Pages</span>
+          </a>
+                    <ul class="sidenav-second-level collapse" id="collapseExamplePages">
+                        <li>
+                            <a href="login.html">Login Page</a>
+                        </li>
+                        <li>
+                            <a href="register.html">Registration Page</a>
+                        </li>
+                        <li>
+                            <a href="forgot-password.html">Forgot Password Page</a>
+                        </li>
+                        <li>
+                            <a href="blank.html">Blank Page</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Menu Levels">
+                    <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti" data-parent="#exampleAccordion">
+            <i class="fa fa-fw fa-sitemap"></i>
+            <span class="nav-link-text">Menu Levels</span>
+          </a>
+                    <ul class="sidenav-second-level collapse" id="collapseMulti">
+                        <li>
+                            <a href="#">Second Level Item</a>
+                        </li>
+                        <li>
+                            <a href="#">Second Level Item</a>
+                        </li>
+                        <li>
+                            <a href="#">Second Level Item</a>
+                        </li>
+                        <li>
+                            <a class="nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti2">Third Level</a>
+                            <ul class="sidenav-third-level collapse" id="collapseMulti2">
+                                <li>
+                                    <a href="#">Third Level Item</a>
+                                </li>
+                                <li>
+                                    <a href="#">Third Level Item</a>
+                                </li>
+                                <li>
+                                    <a href="#">Third Level Item</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Link">
+                    <a class="nav-link" href="#">
+            <i class="fa fa-fw fa-link"></i>
+            <span class="nav-link-text">Link</span>
+          </a>
+                </li>
+            </ul>
+            <ul class="navbar-nav sidenav-toggler">
+                <li class="nav-item">
+                    <a class="nav-link text-center" id="sidenavToggler">
+            <i class="fa fa-fw fa-angle-left"></i>
+          </a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="modal" data-target="#exampleModal">
+            <i class="fa fa-fw fa-sign-out"></i>Logout</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="content-wrapper">
+        <div class="container-fluid">
+            <!-- Breadcrumbs-->
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="/open_home">OPEN SPLUG</a>
+                </li>
+                <li class="breadcrumb-item active">
+                    <%=title%>
+                </li>
+
+            </ol>
+
+            <div class="card mb-3">
+                <div class="card-header">
+                    <i class="fa fa-table"> <%=title%></i>
+
+                    <div class="write_board">
+                        <a href=/open_home/<%=position%>/write>글쓰기</a>
+                    </div>
+
+                </div>
+
+
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                            <thead>
+                                <tr>
+
+                                    <th>작성자</th>
+                                    <th>제목</th>
+                                    <th>조회수</th>
+                                    <th>수정일</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <%
+     for(var i=rows.length-1; i>=0; i--)
+     {
+        var oneItem = rows[i];
+          var oneItem = rows[i];
+         var date = new Date(oneItem.date*1000);
+         var year =  date.getFullYear();
+         var month =  date.getMonth()+1;
+         var day =  date.getDay()+1;
+         var hour = date.getHours();
+         var minute = date.getMinutes();
+         var result =  year+"/"+month+"/"+day+" "+hour+":"+minute;
+%>
+                                    <tr>
+                                        <td>
+                                            <%=oneItem.name%>
+                                        </td>
+                                        <td><a href=/open_home/free/read/<%=oneItem.no%>> <%=oneItem.title+"  ["+oneItem.replys+"]"%> </a></td>
+                                        <td>
+                                            <%=oneItem.hit%>
+                                        </td>
+                                        <td>
+                                            <%=result%>
+                                        </td>
+                                    </tr>
+                                    <%
+     }
+%>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <%if(page!=1)         { %>
+                        <a href="/open_home/free/list/<%=page-1%>">
+                            <%=page-1%>
+                        </a>
+                        <%}%>
+                            <span><%=page%></span>
+                            <%if(page!=total_page){%>
+                                <a href="/open_home/free/list/<%=page+1%>">
+                                    <%=page+1%>
+                                </a>
+                                <%}%>
+
+                                    <%if(page!=total_page){%>
+                                        <span> ...</span>
+                                        <a href="/open_home/free/list/<%=total_page%>">
+                                            <%=total_page%>
+                                        </a>
+                                        <%}%>
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- /.container-fluid-->
+        <!-- /.content-wrapper-->
+        <footer class="sticky-footer">
+            <div class="container">
+                <div class="text-center">
+                    <small>Copyright © SPLUG 2017</small>
+                </div>
+            </div>
+        </footer>
+        <!-- Scroll to Top Button-->
+        <a class="scroll-to-top rounded" href="#page-top">
+      <i class="fa fa-angle-up"></i>
+    </a>
+        <!-- Logout Modal-->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">로그아웃?</h5>
+                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+                    </div>
+                    <div class="modal-body">로그아웃 하시겠어요?</div>
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary" type="button" data-dismiss="modal">취소</button>
+                        <a class="btn btn-primary" href="/process/logout">로그아웃</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap core JavaScript-->
+        <script src="/open_home_resource/vendor/jquery/jquery.min.js "></script>
+        <script src="/open_home_resource/vendor/bootstrap/js/bootstrap.bundle.min.js "></script>
+        <!-- Core plugin JavaScript-->
+        <script src="/open_home_resource/vendor/jquery-easing/jquery.easing.min.js "></script>
+        <!-- Page level plugin JavaScript-->
+        <script src="/open_home_resource/vendor/chart.js/Chart.min.js "></script>
+        <!-- Custom scripts for all pages-->
+        <script src="/open_home_resource/js/sb-admin.min.js "></script>
+        <!-- Custom scripts for this page-->
+        <script src="/open_home_resource/js/sb-admin-charts.min.js "></script>
+    </div>
+
+
+</body>
+
+</html>

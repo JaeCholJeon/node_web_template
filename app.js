@@ -30,7 +30,11 @@ var router = express.Router();
 router.route('/process/login').post(function(req,res){
     console.log('/process/login called');
 });
-
+router.route('/index').all(function(req,res){
+    res.render('index',{
+        
+    });
+})
 app.use('/',router);
 app.all('/',function(req,res){
    res.redirect('/index'); 

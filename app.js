@@ -11,7 +11,13 @@ var expressSession = require('express-session');
 
 var app =express();
 
-app.set('port',process.env.PORT||3000);
+var authUser =function(id,pwd,callback){
+//	console.log(‘auth USER’);
+}
+
+app.set('port',process.env.PORT||9000);
+app.set('views',path.join(__dirname,'views'));
+app.set('view engine','ejs');
 app.use(bodyParser.urlencoded({extended:false}));
 app.use(bodyParser.json());
 app.use(expressSession({
@@ -26,6 +32,9 @@ router.route('/process/login').post(function(req,res){
 });
 
 app.use('/',router);
+app.all('/',function(req,res){
+   res.redirect('/index'); 
+});
 
 http.createServer(app).listen(app.get('port'),function(){
    console.log('server started on '+app.get('port'));
